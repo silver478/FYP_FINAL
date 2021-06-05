@@ -1,0 +1,7 @@
+ data = list(file.get("fullname").values())
+        a=[]   
+        an_array = np.array(data)
+        result2=an_array
+        img3=Image.fromarray(result2, 'RGB')
+        img3.save('my.png')
+        result = json.dumps(file.get("fullname"))
